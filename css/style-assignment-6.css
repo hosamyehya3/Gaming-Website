@@ -1,0 +1,128 @@
+body {
+    font-family: "Orbitron", sans-serif;
+    background-color: rgb(11, 14, 19);
+}
+
+:root {
+    --mainColor: rgb(203, 254, 28);
+}
+
+.my-button {
+    background-color: rgb(201, 240, 75);
+}
+
+.my-button:hover {
+    background-color: rgb(164, 206, 26);
+}
+
+.header-main{
+    padding: 0 !important;
+}
+.color-head-nav {
+    color: var(--mainColor);
+}
+
+.second-title {
+    color: var(--mainColor);
+
+}
+
+.photo-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.822)), url("../imgs/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 110vh;
+}
+
+.my-btn {
+    text-transform: capitalize;
+    width: 230px !important;
+    background-color: var(--mainColor);
+    font-weight: 700;
+    color: #000;
+
+}
+
+.my-btn:hover {
+    background-color: var(--mainColor);
+
+}
+
+.my-btn2 {
+    width: 230px !important;
+    color: var(--mainColor);
+}
+
+.my-btn2:hover {
+    color: #000;
+    background-color: var(--mainColor);
+    font-weight: 700;
+}
+
+.shine-button {
+    position: relative;
+    overflow: hidden;
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.shine-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4),
+            transparent);
+    transform: skewX(-25deg);
+    transition: none;
+}
+
+
+.shine-button:hover::before {
+    left: 150%;
+    transition: left 0.6s ease-in-out;
+}
+.box-img{
+    width: 50%;
+    background-image: linear-gradient(to left,rgb(203, 254, 28) , rgb(8, 224, 115) );
+    border-radius: 20px;
+    border: -20px solid transparent;
+    padding: 5px;
+}
+.my-badge{
+    position: absolute;
+    padding:20px;
+    bottom: -30px;
+    left: -30px;
+}
+.color-section-2 {
+    color: var(--mainColor);
+}
+.our-games::before {
+     content: "";
+    width: 50px;
+    height:3px;
+    background-color: var(--mainColor);
+    position: absolute;
+   top: 59px;
+   left:38%;
+ border-top-left-radius: 100% ;
+    border-bottom-left-radius: 100%;
+} 
+.our-games::after{
+     content: "";
+    width: 50px;
+    height:3px;
+    background-color: var(--mainColor);
+    position: absolute;
+    top: 59px;
+    right:38%;
+    border-top-right-radius: 100% ;
+    border-bottom-right-radius: 100%;
+}
