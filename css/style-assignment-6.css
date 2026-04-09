@@ -285,12 +285,32 @@ color: var(--mainColor) !important;
 }
 .color-radial{
     background-image: radial-gradient(circle,rgb(203, 254, 28) 1%, rgba(0, 0, 0, 0) 62%);
-}.group-logos img{
-   margin-inline: 2px;
 }
-@keyframes moving {
-    0%{
-        
-    }
-    
+.slider {
+  width: 100%;
+  overflow: hidden; 
+  white-space: nowrap;
+  margin: 2px;
 }
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 20); 
+  animation: scroll 80s linear infinite;
+  background-image: linear-gradient();
+}
+
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+
+  100% { transform: translateX(calc(-250px * 10)); }
+}
+
+.padge-avatar{
+    bottom:60px;
+    right:-20px;
+    transform: rotate(90deg);
+}
+
+
