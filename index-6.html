@@ -20,27 +20,30 @@
     <link rel="stylesheet" href="./css/style-assignment-6.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-scroll">
 
 
 
-    <div class="photo-background">
-        <nav class="navbar navbar-expand-lg bg-black fixed-top navbar-dark my-nav  ">
+    <div class="photo-background " id="home">
+        <nav  id="navbar-scroll" class="navbar navbar-expand-lg bg-black fixed-top navbar-dark my-nav " >
             <div class="container-fluid px-5">
                 <div class="p-3"> <i class="fa-solid fa-gamepad fa-xl" style="color:rgb(203, 254, 28);"></i>
                 </div>
                 <a class="navbar-brand color-head-nav" href="#">GameArena</a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+                <div class="collapse navbar-collapse my-ul" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">OUR GAMES</a>
+                            <a class="nav-link" href="#ourgames">OUR GAMES</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">What We Do</a>
+                            <a class="nav-link" href="#WHAT WE DO">What We Do</a>
                         </li>
 
                         <li class="nav-item">
@@ -96,54 +99,241 @@
             </div>
     </div>
     </header>
-    <section>
-<div class="container">
-    <div class="position-relative box pt-5">
-<p class="text-center fs-6 color-section-2 fw-bold our-games">OUR GAMES</p>
-<h2 class="text-center h1 fw-bold text-white">Our Latest Games</h2>
+    <section >
+<div class="container mt-5 mb-5">
+<div class="container-fluid">
+   <div class="position-relative box pt-5">
+<p class="text-center  fs-6 color-section-2 fw-bold our-games" id="ourgames">OUR GAMES</p>
+<h2 class="text-center h1 fw-bold text-white pb-5">Our Latest Games</h2>
     </div>
-
-<div id="carouselExampleIndicators" class="carousel slide">
+<div class="row ">
+   <div id="carouselExampleIndicators" class="carousel slide ">
   
-  <div class="carousel-inner">
-    <div class="carousel-item active row">
-        <div class="row">
-  <img src="./imgs/latest-games-1-CfV33bjK.png" class="d-block col-4 rounded-5" alt="...">
-      <img src="./imgs/latest-games-2-DcGt1MOH.png" class="d-block col-4 rounded-5" alt="...">
-      <img src="./imgs/latest-games-3-3PuaZ95E.png" class="d-block col-4 rounded-5" alt="...">
-
-        </div>
+  <div class="carousel-inner ">
+    <div class="carousel-item  active row ">
+        <div class="d-flex w-100 ">
+<div class="card-container d-block col-4  rounded-5">
+  <img src="./imgs/latest-games-1-CfV33bjK.png" alt="img-game-1">
+  <div class="overlay">
     
+    <div class="badges-top">
+      <span class="badge ">ADVENTURE</span>
+      <span class="badge ">MULTIPLAYER</span>
     </div>
-    <div class="carousel-item row">
-        <div class="row">
-   <img src="./imgs/latest-games-4-DCWGKdgP.png" class="d-block col-4 rounded-5" alt="...">
-      <img src="./imgs/latest-games-5-D0uhM4CW.png" class="d-block col-4 rounded-5" alt="...">
-      <img src="./imgs/latest-games-6-CJaIm3nW.png" class="d-block col-4 rounded-5" alt="...">
-
+  
+    <div class="text-bottom">
+      <h3 class="fs-6">Alien Companions </h3>
+    </div>
+  </div>
+</div>
+<div class="card-container d-block col-4  rounded-5">
+  <img src="./imgs/latest-games-2-DcGt1MOH.png" alt="img-game-2">
+  <div class="overlay">
+    
+    <div class="badges-top">
+      <span class="badge"> RACING</span>
+      <span class="badge">SCI-FI</span>
+    </div>
+  
+    <div class="text-bottom">
+      <h3 class="fs-6">Cyber Run 2099</h3>
+    </div>
+  </div>
+</div>
+<div class="card-container d-block col-4  rounded-5">
+  <img src="./imgs/latest-games-3-3PuaZ95E.png" alt="img-game-3">
+  <div class="overlay">
+    
+    <div class="badges-top">
+      <span class="badge ">ACTION</span>
+      <span class="badge ">GEFORCE</span>
+    </div>
+  
+    <div class="text-bottom">
+      <h3 class="fs-6">The Legend of Zelda: Tears of the Kingdom
+         </h3>
+    </div>
+  </div>
+</div>
+        </div>
+    </div>
+    <div class="carousel-item row ">
+        <div class="d-flex w-100 ">
+            <div class="card-container d-block col-4  rounded-5">
+  <img src="./imgs/latest-games-4-DCWGKdgP.png" alt="img-game-4">
+  <div class="overlay">
+    
+    <div class="badges-top">
+      <span class="badge ">RPG</span>
+      <span class="badge ">FANTASY</span>
+    </div>
+  
+    <div class="text-bottom">
+      <h3 class="fs-6">Aetheria Chronicles</h3>
+    </div>
+  </div>
+</div>
+            <div class="card-container d-block col-4  rounded-5">
+  <img src="./imgs/latest-games-5-D0uhM4CW.png" alt="img-game-5">
+  <div class="overlay">
+    
+    <div class="badges-top">
+      <span class="badge">SHOOTER</span>
+      <span class="badge">CO-OP</span>
+    </div>
+  
+    <div class="text-bottom">
+      <h3 class="fs-6">Warfront Protocol</h3>
+    </div>
+  </div>
+</div>
+            <div class="card-container d-block col-4  rounded-5">
+  <img src="./imgs/latest-games-6-CJaIm3nW.png" alt="img-game-6">
+  <div class="overlay">
+    
+    <div class="badges-top">
+      <span class="badge">FOOTBALL</span>
+      <span class="badge">FANTASY</span>
+    </div>
+  
+    <div class="text-bottom">
+      <h3 class="fs-6">Shot Striker</h3>
+    </div>
+  </div>
+</div>
         </div>
       
     </div>
-    <div class="carousel-item ">
-<div class="row">
-     <img src="./imgs/latest-games-7.png" class="d-block col-4 rounded-5" alt="...">
-      <img src="./imgs/latest-games-8.png" class="d-block col-4 rounded-5" alt="...">
-      <img src="./imgs/latest-games-9.png" class="d-block col-4 rounded-5" alt="...">
-</div>
-   
-
-
+    <div class="carousel-item row ">
+<div class="d-flex w-100 ">
+            <div class="card-container d-block col-4  rounded-5">
+  <img src="./imgs/latest-games-7.png" alt="img-game-7">
+  <div class="overlay">
+    
+    <div class="badges-top">
+      <span class="badge ">SPORTS</span>
+      <span class="badge ">LEAGUE</span>
+    </div>
+  
+    <div class="text-bottom">
+      <h3 class="fs-6">Epic Gaming League</h3>
     </div>
   </div>
-<div class="carousel-indicators position-static">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+
+            <div class="card-container d-block col-4  rounded-5">
+  <img src="./imgs/latest-games-8.png" alt="img-game-8">
+  <div class="overlay">
+    
+    <div class="badges-top">
+      <span class="badge">SPACE</span>
+      <span class="badge">EXPLORATION</span>
+    </div>
+  
+    <div class="text-bottom">
+      <h3 class="fs-6">Barren alien worlds</h3>
+    </div>
   </div>
 </div>
 
+            <div class="card-container d-block col-4  rounded-5">
+  <img src="./imgs/latest-games-9.png" alt="img-game-9">
+  <div class="overlay">
+    
+    <div class="badges-top">
+      <span class="badge">ACTION</span>
+      <span class="badge">FUTURISTIC</span>
+    </div>
+  
+    <div class="text-bottom">
+      <h3 class="fs-6">Cloveland Quest</h3>
+    </div>
+  </div>
 </div>
-
+   
+</div>
+    </div>
+  </div>
+<div class="carousel-indicators position-static pt-5 ">
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><i class="fa-solid fa-arrow-left fa-xl " style="color: rgb(182, 181, 174);"></i></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"> <i class="fa-solid fa-arrow-right fa-xl icon-1" style="color: rgb(182, 181, 174);"></i>
+  
+</button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">VIEW ALL GAMES</button>
+</div>
+  </div>
+</div> 
+</div>
+    </div>
+    </section>
+    <section id="WHAT WE DO">
+<div class="container  mt-5">
+    <div class="position-relative  mb-5 pt-5">
+<p class="text-center  fs-6 color-section-2 fw-bold our-games" id="WHAT WE DO">WHAT WE DO</p>
+<h2 class="text-center h1 fw-bold text-white pb-1 display-5">More Than Just Games</h2>
+<h2 class="h1 text-center fw-bold text-white pb-1">We Build <span class="mainColor">Interactive</span>  Journeys</h2>
+    </div>
+    <div class="row  g-3">
+     <div class="border rounded-3 box-color w-25 border-2 box border-black bg-dark">
+    <div class="bg-black   box-icons rounded-3 h-25 w-25 mx-auto my-5  d-flex justify-content-center align-items-center"><i class="fa-solid fa-desktop fa-xl " style="color: rgb(203, 254, 28);"></i></div>
+    <p class="text-center fw-bold h5 text-white">PC Game</p>
+    <p class="text-center fw-bold h5 text-white">Development</p>
+</div>   
+     <div class="border rounded-3 box-color w-25 border-2 box border-black bg-dark">
+    <div class="bg-black  box-icons rounded-3 h-25 w-25 mx-auto my-5  d-flex justify-content-center align-items-center"><i class="fa-solid fa-mobile-screen-button fa-2xl" style="color: rgb(203, 254, 28);"></i></div>
+    <p class="text-center fw-bold h5 text-white">PC Game</p>
+    <p class="text-center fw-bold h5 text-white">Development</p>
+</div>   
+   
+    <img class=" border rounded-3 p-0 w-25 border-2 box border-black bg-dark" src="./imgs/what-we-do-1-DuZnkwGW.png" alt="">
+     <div class="border rounded-3 box-color w-25 border-2 box border-black bg-dark">
+    <div class="bg-black rounded-3  box-icons h-25 w-25 mx-auto my-5  d-flex justify-content-center align-items-center"><i class="fa-solid fa-vr-cardboard fa-xl" style="color:rgb(203, 254, 28) ;"></i></div>
+    <p class="text-center fw-bold h5 text-white">AR/VR</p>
+    <p class="text-center fw-bold h5 text-white">Solutions</p>
+</div> 
+     <div class="border rounded-3 box-color w-25 border-2 box border-black bg-dark">
+    <div class="bg-black rounded-3 box-icons h-25 w-25 mx-auto my-5  d-flex justify-content-center align-items-center"><i class="fa-solid fa-cubes fa-xl" style="color:rgb(203, 254, 28);"></i></div>
+    <p class="text-center fw-bold h5 text-white">AR/VR</p>
+    <p class="text-center fw-bold h5 text-white">Design</p>
+</div>
+<img class="border rounded-3 p-0 w-25 border-2 box border-black bg-dark" src="./imgs/what-we-do-2-DVAo6agz.png" alt="what-we-do-2"> 
+     <div class="border rounded-3 box-color w-25 border-2 box border-black bg-dark">
+    <div class="bg-black rounded-3 box-icons h-25 w-25 mx-auto my-5  d-flex justify-content-center align-items-center"><i class="fa-brands fa-playstation fa-xl" style="color:rgb(203, 254, 28);"></i></div>
+    <p class="text-center fw-bold h5 text-white">PS4 Game</p>
+    <p class="text-center fw-bold h5 text-white">Development</p>
+</div> 
+     <div class="border rounded-3 box-color w-25 border-2 box border-black bg-dark">
+    <div class="bg-black rounded-3 box-icons h-25 w-25 mx-auto my-5  d-flex justify-content-center align-items-center"><i class="fa-solid fa-cube fa-xl" style="color: rgb(203, 254, 28);"></i></div>
+    <p class="text-center fw-bold h5 text-white">3D</p>
+    <p class="text-center fw-bold h5 text-white">Modelings</p>
+    </div>
+</div>
+<div class="container-fluid color-radial">
+<div class="border-with-radial"></div>
+<div class="py-3 group-logos" >
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-1-ByM-Sex8.jpg" alt="logo-1">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-2-0gIktwSm.jpg" alt="logo-2">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-3-CczztP90.jpg" alt="logo-3">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-4-CqgtpirC.jpg" alt="logo-4">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-5-DFypfU0k.jpg" alt="logo-5">
+<img class=" img-logo-animation rounded-3" src="./imgs/latest-games-6-CJaIm3nW.png" alt="logo-6">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-7-DSTdzFnp.jpg" alt="logo-7">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-8-BuH3qQns.jpg" alt="logo-8">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-9-btJ2eZYX.jpg" alt="logo-9">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-10-DlvZwrGv.jpg" alt="logo-10">
+</div>
+<div class="py-3 group-logos" >
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-1-ByM-Sex8.jpg" alt="logo-1">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-2-0gIktwSm.jpg" alt="logo-2">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-3-CczztP90.jpg" alt="logo-3">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-4-CqgtpirC.jpg" alt="logo-4">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-5-DFypfU0k.jpg" alt="logo-5">
+<img class=" img-logo-animation rounded-3" src="./imgs/latest-games-6-CJaIm3nW.png" alt="logo-6">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-7-DSTdzFnp.jpg" alt="logo-7">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-8-BuH3qQns.jpg" alt="logo-8">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-9-btJ2eZYX.jpg" alt="logo-9">
+<img class=" img-logo-animation rounded-3" src="./imgs/logo-10-DlvZwrGv.jpg" alt="logo-10">
+</div>
 
 
 
@@ -169,7 +359,7 @@
 
 
 
-    </div>
+    
 
 
 
