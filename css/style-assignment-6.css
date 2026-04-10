@@ -1,14 +1,23 @@
 body {
       font-family: "Days One", sans-serif;
     background-color: rgb(11, 14, 19);
-    
+    scroll-behavior: smooth;
+  
 }
+
 a{
     text-decoration-line: none;
     color: inherit;
 }
+
+::placeholder{
+    color: #fff !important ;
+    font-size: 15px !important;
+}
+
 :root {
     --mainColor: rgb(203, 254, 28);
+    
 }
 .mainColor{
     color: var(--mainColor);
@@ -263,7 +272,7 @@ color: var(--mainColor) !important;
      border-top: 50px solid var(--mainColor);
     border-right: 50px solid transparent; 
     position: relative;
-    top: 55px ;
+    top:48px ;
 }
 .box-color:hover::after{
       content: "";
@@ -397,5 +406,10 @@ animation: filter 1s;
 filter: grayscale(50%);
 }
 .all-buttons{
-    min-height: 80vh;
+    min-height:100vh;
+}
+.color-btn-input{
+    background-color: #6D7B93 ;
+    opacity: 50%;
+    border: 2px solid var(--mainColor);
 }
