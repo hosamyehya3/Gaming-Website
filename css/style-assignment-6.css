@@ -1,9 +1,12 @@
 body {
-    font-family: "Orbitron", sans-serif;
+      font-family: "Days One", sans-serif;
     background-color: rgb(11, 14, 19);
     
 }
-
+a{
+    text-decoration-line: none;
+    color: inherit;
+}
 :root {
     --mainColor: rgb(203, 254, 28);
 }
@@ -307,10 +310,92 @@ color: var(--mainColor) !important;
   100% { transform: translateX(calc(-250px * 10)); }
 }
 
-.padge-avatar{
+/* .padge-avatar{
     bottom:60px;
     right:-20px;
     transform: rotate(90deg);
+} */
+.photo-logo{
+    background-image:  url("../imgs/avatar-1.png"); 
+    width: 24% ;
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+ filter: grayscale(100%);
+transition: filter 0.5s ease-in-out ;
+padding-inline: 0px !important;
+margin-inline:5px ;
+transition: all 1s linear;
+
+}
+.container-logo-avatars{
+    padding: 0 !important;
+}
+.photo-logo p{
+    font-size:12px;
+   
+}
+.photo-logo div h3{
+    transform: rotate(90deg);
+}
+.photo-logo:hover {
+  filter: grayscale(0%);
+animation: filter 1s;
 }
 
+.photo-logo2{
+    background-image:  url("../imgs/avatar-2.png"); 
+}
+.photo-logo3{
+    background-image: url("../imgs/avatar-3.png");
+}
+.photo-logo4{
+    background-image: url("../imgs/avatar-4.png");
+    
+}
+.photo-logo5{
+    background-image: url("../imgs/avatar-5.png");
+    
+}
+.photo-logo6{
+    background-image: url("../imgs/avatar-6.png");
+    
+}
+.photo-logo7{
+    background-image: url("../imgs/avatar-7.png");
+    
+}
+.photo-logo8{
+    background-image: url("../imgs/avatar-8.png");
+    
+}
+.my-loaction{
+    width: 70px;
+    height:70px;
+    background-color: var(--mainColor);
+}
 
+.color-contact{
+    background-color: rgb(15, 22, 37);
+}
+.color-bg{
+    background-color: rgb(30, 41, 57);
+}
+.bg-linear{
+  
+    background-image: linear-gradient(to left , rgb(56, 226, 110) ,rgb(203, 254, 28));
+}
+
+.social{
+    width: 50px;
+    height: 50px;
+}
+.social i{
+    color: transparent;
+}
+.icon-social:hover{
+filter: grayscale(50%);
+}
+.all-buttons{
+    min-height: 80vh;
+}
